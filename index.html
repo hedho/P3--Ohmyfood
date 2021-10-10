@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="acceuil.css">
     <script src="https://kit.fontawesome.com/e5dbd3d7b3.js" crossorigin="anonymous"></script>
 
     <title>Acceuil</title>
@@ -19,7 +19,7 @@
       <header>
       <a href="">
       <div class="logo">
-          <img src="ohmyfoodsvg.svg" alt="Logo de Ohmyfood">
+          <img class="svg-logo" src="ohmyfoodsvg.svg" alt="Logo de Ohmyfood">
       </div>
       </a>
    
@@ -27,7 +27,8 @@
             <p>Paris, Belleville</p>
         </div>
 
-        <div class="info">
+        <div class="info-header">
+        <div class="info-title">
             <h1>Réservez le menu qui<br>vous convient</h1>
         <div class="info-details">
             <p>Découvrez des restaurants d'éxception,<br>séléctionnés par nos soins.</p>
@@ -35,9 +36,8 @@
         </div>
 
         <div class="header-btn">
-            <a href="">
                 <button class="explore-btn">Explorer nos restaurants</button>
-            </a>
+        </div>
         </div>
     </header>
 
@@ -47,27 +47,29 @@
 
           <div class="working">
               <div class="working-cards">
-                  <p>Choisissez un restaurant</p>
+                <h3 class="number">1</h3> <p>Choisissez un restaurant</p>
               </div>
               <div class="working-cards">
-                <p>Composez votre menu</p>
+                <h3 class="number">2</h3><p>Composez votre menu</p>
             </div>
             <div class="working-cards">
-                <p>Dégustez au restaurant</p>
+                <h3 class="number">3</h3><p>Dégustez au restaurant</p>
             </div>
           </div>
       </nav>
 
       <!--SECTION-->
       <section class="restaurants">
-          <h3>Restaurants</h3>
+          <div class="restaurant-title">
+          <h3 >Restaurants</h3>
+        </div>
 
           <div class="places">
 
             <a href="">
               <div class="places-cards">
                   <img class="places-img" src="palgout.jpg" alt="Photo de La palette du goût"
-                  width="220" height="120">
+                  width="300" height="150">
                   <div class="places-details">
                       <h4>La palette du goût</h4>
                       <p>Ménilmontant</p>
@@ -78,7 +80,7 @@
             <a href="">
               <div class="places-cards">
                 <img class="places-img" src="lanote.jpg" alt="Photo de La note enchantée"
-                width="220" height="120">
+                width="300" height="150">
                 <div class="places-details">
                     <h4>La note enchantée</h4>
                     <p>Charonne</p>
@@ -89,7 +91,7 @@
             <a href="">
             <div class="places-cards">
                 <img class="places-img" src="francaise.jpg" alt="Photo de À la francaise"
-                width="220" height="120">
+                width="300" height="150">
                 <div class="places-details">
                     <h4>À la francaise</h4>
                     <p>Cité Rouge</p>
@@ -100,7 +102,7 @@
             <a href="">
             <div class="places-cards">
                 <img class="places-img" src="délice.jpg" alt="Délice des sens"
-                width="220" height="120">
+                width="300" height="150">
                 <div class="places-details">
                     <h4>Le délice des sens</h4>
                     <p>Folie-Méricourt</p>
