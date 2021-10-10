@@ -1,0 +1,160 @@
+a{
+    text-decoration: none;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/**HEADER**/
+.svg-logo{
+    margin-left: 20vw;
+    margin-bottom: 1vh;
+}
+
+.location{
+    margin-top: -2vh;
+    background-color: #eaeaea;
+    box-shadow:  0 -2px 4px #BEBEBE;
+}
+
+.location p{
+    padding-top: 10px;
+    margin-left: 32vw;
+    font-weight: 500;
+    height: 6vh;
+}
+
+.info-header{
+    background-color: #f6f6f6;
+    height: 230px;
+    margin-top: -5vw;
+    padding-top: 5px;
+}
+.info-title{
+    font-size: 13px;
+    text-align: center;
+    line-height: 4vh;
+    font-weight: 500;
+}
+.info-details{
+    color: #3A3A3A;
+    margin-top: 0vh;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3vh;
+}
+
+/**HEADER BTN**/
+.header-btn{
+    margin-top: 3vh;
+    margin-left: 22vw;
+}
+.explore-btn{
+    font-size: 14px;
+    width: 50vw;
+    height: 43px;
+    color: #fff;
+    background-image: linear-gradient(to bottom right,#FF79DA,#9356DC) ;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 10px #A9A9A9;
+    cursor: pointer;
+}
+
+
+/**NAV**/
+.working-cards{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-bottom: 3vh;
+    margin-left: 5vw;
+    text-align: center;
+    width: 80vw;
+    height: 60px;
+    background-color: #f6f6f6;
+    box-shadow: 0 3px 10px #CDCDCD;
+}
+.working-cards p{
+    margin-top: -5vh;
+}
+
+.working-cards:hover{
+    background-color: #f5edff;
+}
+
+.number{
+    color: #fff;
+    background-color: #9356DC;
+    border: 1px solid #9356DC;
+    border-radius: 20px;
+    width: 6vw;
+    height: 23px;
+    text-align: center;
+    margin-left: -5vw;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+/**SECTION**/
+section{
+    background-color: #f6f6f6;
+    height: 157vh;
+}
+
+.restaurant-title{
+    margin-top: 7vh;
+    padding-top: 3vh;
+    margin-left: 4vw;
+}
+
+.places{
+    margin-left: 5vw;
+}
+
+.places-cards{
+    border: 2px solid transparent;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 80vw;
+    height: 32vh;
+    margin-bottom: 2vh;
+    box-shadow: 0 3px 10px #CDCDCD;
+}
+
+.places-img{
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.places-details{
+    color: #000;
+    line-height: 0;
+    margin-left: 2vw;
+}
+
+/**FOOTER**/
+footer{
+    background-color: #353535;
+    color: #fff;
+    height: 25vh;
+}
+footer a{
+    color: #fff;
+}
+.footer-header{
+    font-family: shrikhand;
+    font-size: 19px;
+    font-weight: lighter;
+    margin-left: 4vw;
+    padding-top: 0.1vh;
+}
+
+.footer-details{
+    color: #fff;
+    margin-left: 4vw;
+    margin-top: -3vh;
+}
+
+.footer-link{
+    font-size: 14px;
+}
