@@ -1,0 +1,156 @@
+a{
+    text-decoration: none;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/**HEADER**/
+.svg-logo{
+    margin-left: 20vw;
+    margin-bottom: 1vh;
+}
+
+.background__img{
+    object-fit: cover;
+}
+ 
+/**MAIN**/
+main{
+background-color: #f6f6f6;
+border-radius: 20px 20px 0 0;
+height: 164vh;
+}
+
+/**MENU--2 / LA NOTE ENCHANTEE**/
+.menu--2{
+    background-color: #f6f6f6;
+    border-radius: 20px 20px 0 0;
+    height: 176vh;
+}
+/**-----------**/
+
+.food{
+    margin-left: 5vw;
+}
+
+.menu__title{
+    font-family: shrikhand;
+    font-size: 12px;
+    padding-top: 1vh;
+    margin-left: 5vw;
+}
+
+.food__title{
+font-size: 10px;
+font-weight: 300;
+width: 12vw;
+margin-bottom: 3vh;
+margin-top: 5vh;
+margin-left: 1vw;
+}
+
+.food__card{
+    border: 2px solid #fff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px #CDCDCD;
+    background-color: #fff;
+    width: 85vw;
+    height: 9vh;
+    margin-bottom: 2vh;
+}
+
+.food__details{
+    font-size: 14px;
+    margin-left: 3vw;
+    margin-top: -1vh;
+    line-height: 1vh;
+    }
+
+    .food__price{
+        font-weight: bold;
+        margin-left: 70vw;
+        margin-top: -3.5vh;
+    }
+    
+    /**FOOD-CARD--2 LE-DELICE**/
+.food__card--2{
+    border: 2px solid #fff;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 5px 10px #CDCDCD;
+    background-color: #fff;
+    width: 85vw;
+    height: 10vh;
+    margin-bottom: 2vh;
+}
+
+.food__more--2{
+    margin-top: -1vh;
+}
+
+.food__details--2{
+    font-size: 14px;
+    margin-left: 3vw;
+    margin-top: -1vh;
+    line-height: 2vh;
+    }
+
+    .food__price--2{
+        font-weight: bold;
+        margin-left: 70vw;
+        margin-top: -5.5vh;
+    }
+
+/**FOOD BTN**/
+
+.btn{
+    margin-left: 25vw;
+    margin-top: 6vh;
+    padding-bottom: 3vh;
+}
+.btn__order{
+    font-size: 14px;
+    width: 40vw;
+    height: 40px;
+    color: #fff;
+    background-image: linear-gradient(to bottom right,#FF79DA,#9356DC) ;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 10px #A9A9A9;
+    cursor: pointer;
+}
+/**BTN--2/LA NOTE ENCHANTEE**/
+.btn--2{
+    margin-left: 25vw;
+    padding-top: 4.5vh;
+}
+/**------------**/
+
+/**FOOTER**/
+
+footer{
+    background-color: #353535;
+    color: #fff;
+    height: 23vh;
+    margin-top: -4vh;
+}
+
+footer a{
+    color: #fff;
+    font-size: 14px;
+}
+
+.footer-header{
+    font-family: shrikhand;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-left: 4vw;
+    padding-top: 0.2vh;
+}
+
+.footer-details{
+    
+    margin-left: 4vw;
+    margin-top: -3vh;
+}
+
