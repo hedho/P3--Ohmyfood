@@ -11,7 +11,7 @@ body{
     margin-bottom: 1vh;
 }
 
-.location{
+.location{ 
     margin-top: -2vh;
     background-color: #eaeaea;
     box-shadow:  0 -2px 4px #BEBEBE;
@@ -19,9 +19,13 @@ body{
 
 .location p{
     padding-top: 10px;
-    margin-left: 32vw;
+    margin-left: 29vw;
     font-weight: 500;
     height: 6vh;
+}
+.location i{
+    color: #262626;
+    margin-right: 1vw;
 }
 
 .info-header{
@@ -31,7 +35,7 @@ body{
     padding-top: 5px;
 }
 .info-title{
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     line-height: 4vh;
     font-weight: 500;
@@ -60,14 +64,22 @@ body{
     box-shadow: 0 4px 10px #A9A9A9;
     cursor: pointer;
 }
-
+.explore-btn:active{
+    box-shadow: 0 6px 10px #7C7C7C;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
 
 /**NAV**/
+nav h2{
+    font-size: 20px;
+    margin-left: 5vw;
+}
 .working-cards{
     border: 2px solid transparent;
     border-radius: 20px;
     margin-bottom: 3vh;
-    margin-left: 5vw;
+    margin-left: 7vw;
     text-align: center;
     width: 80vw;
     height: 60px;
@@ -76,12 +88,26 @@ body{
 }
 .working-cards p{
     margin-top: -5vh;
+    font-weight: 600;
 }
 
 .working-cards:hover{
     background-color: #f5edff;
+    box-shadow: 0 3px 10px #c1b2d4;
+    transform: scale(1.05);
+    transition: 0.4s;
+    
 }
 
+.working i{
+    color: #757575;
+    margin-right: 4vw;
+    margin-left: -10vw;
+}
+.working i:hover{
+    color: #9356DC;
+    
+}
 .number{
     color: #fff;
     background-color: #9356DC;
@@ -94,6 +120,7 @@ body{
     font-weight: 400;
     font-size: 15px;
 }
+
 
 /**SECTION**/
 section{
@@ -117,8 +144,9 @@ section{
     border-radius: 15px;
     width: 80vw;
     height: 32vh;
-    margin-bottom: 2vh;
+    margin-bottom: 3vh;
     box-shadow: 0 3px 10px #CDCDCD;
+    margin-left: 2.5vw;
 }
 
 .places-img{
@@ -131,7 +159,15 @@ section{
     line-height: 0;
     margin-left: 2vw;
 }
-
+.places-cards:active{
+    box-shadow: 0 5px 10px #949494; 
+    transform: scale(1.03);
+    transition: 0.4s;
+}
+.icons{
+    margin-left: 68vw;
+    margin-top: -5.5vh;
+}
 /**FOOTER**/
 footer{
     background-color: #353535;
@@ -140,21 +176,221 @@ footer{
 }
 footer a{
     color: #fff;
+    font-size: 14px;
 }
 .footer-header{
     font-family: shrikhand;
     font-size: 19px;
     font-weight: lighter;
-    margin-left: 4vw;
+    margin-left: 10vw;
     padding-top: 0.1vh;
 }
 
 .footer-details{
     color: #fff;
-    margin-left: 4vw;
+    margin-left: 10vw;
     margin-top: -3vh;
 }
 
-.footer-link{
-    font-size: 14px;
+.end i{
+margin-right: 2vw;
+}
+
+
+/**MEDIA TABLETTE**/
+@media screen and (min-width: 768px) {
+
+    /**MEDIA HEADER**/ 
+
+    .logo{
+    margin-left: 12vw;
+    }
+
+    
+    .location p{
+        margin-left: 34.5vw;
+    }
+
+    .info-title{
+        margin-left: -5vw;
+        margin-top: -2vh;
+        font-size: 18px;
+    }
+
+    .info-details{
+        font-size: 17px;
+        margin-top: -1vh;
+        margin-left: -3vw;
+    }
+
+    .explore-btn{
+        width: 25vw;
+        margin-left: 10vw;
+        margin-top: -3vh;
+    }
+
+    /**MEDIA NAV**/
+
+    nav h2{
+        font-size: 19px;
+        margin-left: 1vw;
+    }
+
+    .working-cards{
+        margin-left: 12vw;
+        width: 70vw;
+        align-content: center;
+    }
+
+    .working-cards p{
+        font-size: 18px;
+        margin-top: -3.8vh;
+    }
+
+    .number{
+        margin-left: -2vw;
+        width: 3.5vw;
+        height: 2.5vh;
+    }
+
+    /**MEDIA SECTION**/
+
+    section{
+        height: 115vh;
+        border-radius: 0 0 0 0 ;
+    }
+    .restaurant-title{
+        font-size: 17px;
+        margin-left: 1vw;
+    }
+    
+    .places-cards{
+        margin-left: 10vw;
+        margin-bottom: 3vh;
+        width: 60vw;
+        height: 23vh;
+    }
+    .places-img{
+        width: 60vw;
+        height: 17vh;
+    }
+
+    .icons{
+        margin-left: 50vw;
+        margin-top: -3.8vh;
+    }
+
+}
+
+
+/**MEDIA DESKTOP**/
+@media screen and (min-width: 1200px){
+
+    /**DESKTOP HEADER**/
+.logo{
+ margin-left: 19vw;
+}
+
+.svg-logo{
+    width: 19vw;
+}
+
+.location{
+    margin-top: 3vh;
+}
+
+.location p{
+    margin-bottom: 10vh;
+    margin-left: 42.8vw;
+    font-size: 18px;
+}
+
+.info-title{
+    margin-left: -1vw;
+    
+}
+
+.info-details{
+    margin-left: 0vw;
+}
+
+.explore-btn{
+    margin-left: 14vw;
+    font-weight: bold;
+}
+
+/**DESKTOP NAV**/
+
+nav h2{
+    margin-left: 5vw;
+}
+.working-cards{
+    width: 40vw;
+    margin-left: 29vw;
+}
+
+.working-cards p{
+    margin-top: -5vh;
+    margin-left: 6vw;
+}
+
+.working-cards i{
+    margin-right: 2vw;
+}
+
+.number{
+    width: 1.8vw;
+    height: 3.5vh;
+    margin-left: -1vw;
+    align-content: center;
+    line-height: 3.5vh;
+}
+
+/**SECTION DESKTOP**/
+
+section{
+    height: 170vh;
+    margin-bottom: 0vh;
+}
+
+.restaurant-title{
+    margin-left: 5vw;
+}
+.places-cards{
+    width: 40vw;
+    height: 33vh;
+    margin-left: 23.5vw;
+}
+
+.places-img{
+    width: 40vw;
+    height: 25vh;
+}
+
+.icons{
+margin-left: 33vw;
+margin-bottom: 3vh;
+}
+
+/**FOOTER DESKTOP**/
+
+.footer-header{
+    margin-left: 5vw;
+    font-size: 20px;
+}
+.footer-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 40vw;
+    padding-top: 5vh;
+    margin-left: 27vw;
+    font-weight: bolder;
+}
+
+.end i{
+    margin-right: 0.2vw;
+}
+
 }
