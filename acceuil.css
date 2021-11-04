@@ -5,10 +5,82 @@ body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/**SPINNER**/
+
+svg{
+  
+  position: fixed;
+  top: 40%; left: 30%;
+  width: 150px;
+  height: 150px;
+  animation: rotate 2s linear infinite;
+}
+
+svg circle{
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke: #9356DC;
+  stroke-linecap: round;
+  transform: translate(5px,5px);
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  animation: animate 4s linear ;
+}
+
+@keyframes animate
+{
+  0%
+  {
+    stroke-dashoffset: 440;
+  }
+  50%
+  {
+    stroke-dashoffset:0;
+  }
+  50.1%
+  {
+    stroke-dashoffset: 880;
+  }
+}
+@keyframes rotate
+{
+  0%
+  {
+    transform: rotate(0deg)
+  }
+  100%
+  {
+    transform: rotate(360deg)
+  }
+}
+
+.all{
+
+        display: block;
+        animation: fadeIn 4s;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0.1;
+        }
+    
+        to {
+            
+            opacity: 0.1;
+        }
+    }
+
+
 /**HEADER**/
 .svg-logo{
     margin-left: 20vw;
     margin-bottom: 1vh;
+}
+.logo{
+    margin-left: 5vw;
 }
 
 .location{ 
@@ -134,8 +206,9 @@ section{
     margin-left: 4vw;
 }
 
-.places{
+.places,.places-2{
     margin-left: 5vw;
+   
 }
 
 .places-cards{
@@ -159,15 +232,41 @@ section{
     line-height: 0;
     margin-left: 2vw;
 }
-.places-cards:active{
+.places-cards:hover{
     box-shadow: 0 5px 10px #949494; 
-    transform: scale(1.03);
+    
     transition: 0.4s;
 }
 .icons{
-    margin-left: 68vw;
-    margin-top: -5.5vh;
+    margin-left: 67vw;
+    margin-top: -5vh;
+    font-size: 21px;
 }
+
+  .fa-heart:hover {
+    color: #9356DC;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.places__effect{
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: -28vh;
+    width: 25vw;
+    height: 5vh;
+    background-color: #99E2D0;
+    border-radius: 3px 3px;
+}
+
+.effect__p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #008766;
+    margin-left: 4vw;
+}
+
+
 /**FOOTER**/
 footer{
     background-color: #353535;
@@ -200,19 +299,52 @@ margin-right: 2vw;
 /**MEDIA TABLETTE**/
 @media screen and (min-width: 768px) {
 
+
+    /**MEDIA SPINNER TAB**/
+
+    svg{
+  
+        position: fixed;
+        top: 40%; left: 37%;
+        width: 150px;
+        height: 150px;
+        animation: rotate 2s linear infinite;
+      }
+
+      body{
+        background: #fff ;
+      }
     /**MEDIA HEADER**/ 
 
     .logo{
-    margin-left: 12vw;
+    margin-left: 9vw;
+    border-radius: 20px 20px 0 0;
+    width: 80vw;
+    background-color: #fff;
     }
-
-    
+    .svg-logo{
+        margin-top: 1vh;
+        margin-left: 27vw;
+    }
+    .location{
+        margin-top: -1.5vh;
+        width: 80vw;
+        height: 6vh;
+        margin-left: 9vw;
+        border-radius: 20px 20px;
+    }
     .location p{
-        margin-left: 34.5vw;
+        margin-left: 28vw;
     }
 
+    .info-header{
+        width: 80vw;
+        margin-left: 9vw;
+        margin-top: -1.5vh;
+        border-radius: 0 0 20px 20px;
+    }
     .info-title{
-        margin-left: -5vw;
+        margin-left: 0vw;
         margin-top: -2vh;
         font-size: 18px;
     }
@@ -220,25 +352,32 @@ margin-right: 2vw;
     .info-details{
         font-size: 17px;
         margin-top: -1vh;
-        margin-left: -3vw;
+        margin-left: 0vw;
     }
 
     .explore-btn{
         width: 25vw;
-        margin-left: 10vw;
-        margin-top: -3vh;
+        margin-left: 5vw;
+        margin-top: -2vh;
     }
 
     /**MEDIA NAV**/
-
+    nav{
+        background-color: #fff;
+        width: 80vw;
+        height: 32vh;
+        margin-left: 9vw;
+        border-radius: 20px 20px;
+    }
     nav h2{
         font-size: 19px;
-        margin-left: 1vw;
+        margin-left: 5vw;
+        padding-top: 1vh;
     }
 
     .working-cards{
-        margin-left: 12vw;
-        width: 70vw;
+        margin-left: 15vw;
+        width: 50vw;
         align-content: center;
     }
 
@@ -256,8 +395,27 @@ margin-right: 2vw;
     /**MEDIA SECTION**/
 
     section{
-        height: 115vh;
-        border-radius: 0 0 0 0 ;
+        width: 80vw;
+        height: 48vh;
+        border-radius: 20px 20px;
+        margin-left: 9vw;
+        margin-top: -5vh;
+    }
+    section h3{
+        margin-left: 4vw;
+        margin-top: -2vh;
+    }
+    .places{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-left: 1vw;
+    }
+    .places-2{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-left: 1vw;
     }
     .restaurant-title{
         font-size: 17px;
@@ -265,46 +423,104 @@ margin-right: 2vw;
     }
     
     .places-cards{
-        margin-left: 10vw;
         margin-bottom: 3vh;
-        width: 60vw;
-        height: 23vh;
+        width: 35vw;
+        height: 17vh;
     }
     .places-img{
-        width: 60vw;
-        height: 17vh;
+        width: 35vw;
+        height: 11vh;
     }
 
     .icons{
-        margin-left: 50vw;
+        width: 2vw;
+        height: 2vh;
+        margin-left: 28vw;
         margin-top: -3.8vh;
     }
 
+    .places__effect{
+        width: 10vw;
+        height: 3vh;
+        margin-left: 22vw;
+        margin-top: -14vh;
+    }
+
+    .effect__p{
+        margin-left: 1vw;
+    }
+
+
+    /**FOOTER TABLETTE**/
+
+    footer{
+        width: 80vw;
+        height: 25vh;
+        margin-left: 9vw;
+        margin-top: 1vh;
+        margin-bottom: 2vh;
+        border-radius: 20px 20px;
+    }
+    .footer-details{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: 0vw;
+        margin-top: 2vh;
+    }
 }
 
 
 /**MEDIA DESKTOP**/
 @media screen and (min-width: 1200px){
+/**SPINNER DESKTOP**/
+svg{
+  
+    position: fixed;
+    top: 40%; left:46%;
+    width: 150px;
+    height: 150px;
+    animation: rotate 2s linear infinite;
+  }
 
+  /**BODY DESKTOP**/
+    body{
+        background: #fff;
+    }
     /**DESKTOP HEADER**/
 .logo{
- margin-left: 19vw;
+ border-radius: 20px 20px 0 0;
+ width: 50vw;
+ margin-left: 25vw;
+ margin-bottom: -3vh;
+ background-color: #fff;
 }
 
 .svg-logo{
     width: 19vw;
+    margin-left: 15vw;
+    margin-top: 2vh;
 }
 
 .location{
     margin-top: 3vh;
+    margin-left: 25vw;
+    width: 50vw;
+    height: 7vh;
+    border: 20px 20px ;
 }
 
 .location p{
     margin-bottom: 10vh;
-    margin-left: 42.8vw;
+    margin-left: 19vw;
     font-size: 18px;
 }
 
+.info-header{
+    width:50vw;
+    margin-left: 25vw;
+    border-radius: 0 0 20px 20px;
+}
 .info-title{
     margin-left: -1vw;
     
@@ -315,18 +531,27 @@ margin-right: 2vw;
 }
 
 .explore-btn{
-    margin-left: 14vw;
+    width: 15vw;
+    margin-left: -6vw;
     font-weight: bold;
 }
 
 /**DESKTOP NAV**/
-
+nav{
+    border-radius: 20px 20px;
+    margin-top: 0vh;
+    background-color: #fff;
+    width: 50vw;
+    height: 35vh;
+    margin-left: 25vw;
+    margin-top: -0.7vh;
+}
 nav h2{
     margin-left: 5vw;
 }
 .working-cards{
-    width: 40vw;
-    margin-left: 29vw;
+    width: 20vw;
+    margin-left: 15vw;
 }
 
 .working-cards p{
@@ -349,31 +574,54 @@ nav h2{
 /**SECTION DESKTOP**/
 
 section{
-    height: 170vh;
+    height: 65vh;
     margin-bottom: 0vh;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: -6vh;
+    border-radius: 20px 20px;
 }
 
 .restaurant-title{
-    margin-left: 5vw;
+    margin-left: 1vw;
 }
 .places-cards{
-    width: 40vw;
-    height: 33vh;
-    margin-left: 23.5vw;
+    width: 18vw;
+    height: 23vh;
+    margin-left:4vw;
 }
 
 .places-img{
-    width: 40vw;
-    height: 25vh;
+    width: 18vw;
+    height: 15vh;
 }
 
 .icons{
-margin-left: 33vw;
+margin-left: 13vw;
 margin-bottom: 3vh;
+}
+
+.places__effect{
+    width: 5vw;
+    height: 3vh;
+    margin-left: 10.5vw;
+    margin-top: -21vh;
+}
+
+.effect__p{
+    margin-left: 0.8vw;
+    margin-top: 0vh;
 }
 
 /**FOOTER DESKTOP**/
 
+footer{
+    width: 50vw;
+    height: 15vh;
+    margin-left: 25vw;
+    border-radius: 20px 20px;
+    margin-top: 1vh;
+}
 .footer-header{
     margin-left: 5vw;
     font-size: 20px;
@@ -384,8 +632,8 @@ margin-bottom: 3vh;
     justify-content: space-between;
     flex-wrap: nowrap;
     width: 40vw;
-    padding-top: 5vh;
-    margin-left: 27vw;
+    margin-top: 0vh;
+    margin-left: 5vw;
     font-weight: bolder;
 }
 
