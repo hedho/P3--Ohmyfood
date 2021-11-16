@@ -19,6 +19,7 @@ body{
 
 @keyframes fadeIn {
     from {
+        
         opacity: 0;
     }
 
@@ -29,22 +30,42 @@ body{
 }
 
 /**HEADER**/
+.back{
+    display: block;
+    margin-left: 5vw;
+    font-size: 20px; 
+    color: #333333;
+}
 .svg-logo{
+    display: block;
+    margin-top: -4.5vh;
     margin-left: 20vw;
     margin-bottom: 1vh;
 }
 
+.background{
+    z-index: 1;
+}
+
 .background__img{
     object-fit: cover;
-    
+    z-index: 1;
+    width: 100%;
 }
  
 /**MAIN**/
 main{
 background-color: #f6f6f6;
 border-radius: 20px 20px 0 0;
+width: 100%;
 height: 164vh;
 display: block;
+margin-top: -7vh;
+position: relative;
+z-index: 2;
+}
+.menu{
+    z-index: 2;
 }
 
 /**MENU--2 / LA NOTE ENCHANTEE**/
@@ -53,7 +74,7 @@ display: block;
     border-radius: 20px 20px 0 0;
     height: 176vh;
 }
-
+/**-------------------**/
 
 .food{
     margin-left: 5vw;
@@ -64,6 +85,19 @@ display: block;
     font-size: 12px;
     padding-top: 1vh;
     margin-left: 5vw;
+}
+
+.heart{
+    position: absolute;
+    margin-left: 80vw;
+    margin-top: -7vh;
+    font-size: 21px;
+}
+
+.heart:hover{
+    font-weight: bold;
+    transition: 0.2s;
+    color: #9356DC;
 }
 
 .food__title{
@@ -99,64 +133,37 @@ margin-left: 1vw;
         margin-top: -3.5vh;
     }
 
-    
-    section i{
-        margin-top: 4vh;
-        color: transparent;
-        font-size: 18px;
-    }
-    section i:hover{
-        transform: rotate(360deg);
-        transition: 0.4s;
-        color: #fff;
-    }
     .food__effect{
-        width: 60px;
-        height: 65px;
-        margin-left: 70vw;
-        margin-top: -7.5vh;
-        background-color: transparent;
-        border-radius: 0 20px 20px 0;
-        text-align: center;
-        
-    }
-
-    .food__effect:hover{
-        visibility: visible;
-        margin-left: 67vw;
-        margin-top: -7.5vh;
-        transition: 0.2s;
-        background-color: #99E2D0;
-    }
-
-    
-    
-    /**FOOD-CARD--2 LE-DELICE**/
-.food__card--2{
-    border: 2px solid #fff;
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 0 5px 10px #CDCDCD;
-    background-color: #fff;
-    width: 85vw;
-    height: 10vh;
-    margin-bottom: 2vh;
+    transition: 0.4s;
+    width: 0;
+    margin-left: 65vw;
+    margin-top: -7.6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 1;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    height: 9.6vh;
+    transform: scaleX(0);
+ }
+ .food__card:hover .food__effect {
+    border: 2px #99E2D0;
+    margin-left: 61vw;
+    width: 22vw;
+    background-color: #99E2D0;
+    border-radius: 0 15px 15px 0;       
+    transform: scaleX(1);
 }
-
-.food__more--2{
-    margin-top: -1vh;
-}
-
-.food__details--2{
-    font-size: 14px;
-    margin-left: 3vw;
-    margin-top: -1vh;
-    line-height: 2vh;
+    .check{
+        font-size: 1.1em;
+        color: white;
+        transition: 0.5s;
     }
-
-    .food__price--2{
-        font-weight: bold;
-        margin-left: 70vw;
-        margin-top: -5.5vh;
+    .food__card:hover .check{
+        transform: rotate(360deg);
+        transition: 0.5s;
     }
 
 /**FOOD BTN**/
@@ -217,11 +224,18 @@ footer a{
 
     body{
         background: #fff ;
+        margin-left: -8.4vw;
+    }
+
+    .back{
+        font-size: 22px;
+        margin-left: 10vw;
     }
     .logo{
         margin-left: 9vw;
         border-radius: 20px 20px 0 0;
         width: 80vw;
+        margin-top: -4vh;
         }
         .svg-logo{
             margin-top: 1vh;
@@ -282,7 +296,10 @@ footer a{
         }
 
         section i{
+            width: 100%;
+            height: 40px;
             margin-top: 2vh;
+           
         }
         .food__effect{
             width: 65px;
@@ -317,8 +334,14 @@ footer a{
 }
 
 @media screen and (min-width: 1200px){
-
+    body{
+        margin-left: 0vw;
+    }
     /**HEADER DESKTOP**/
+    .back{
+        margin-left: 30vw;
+        margin-bottom: -7vh;
+    }
     .logo{
         border-radius: 20px 20px 0 0;
         width: 50vw;
@@ -355,10 +378,11 @@ footer a{
     }
 
     section i{
-        width: 70px;
+        width: 80px;
         height: 30px;
         margin-top: 2vh;
         color: transparent;
+        margin-left: -0.5vw;
     }
     .food__effect{
         width: 65px;
