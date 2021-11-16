@@ -134,19 +134,19 @@ margin-left: 1vw;
     }
 
     .food__effect{
-    transition: 0.4s;
-    width: 0;
-    margin-left: 65vw;
-    margin-top: -7.6vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    opacity: 1;
+    width: 0;
+    height: 9.6vh;
+    margin-left: 65vw;
+    margin-top: -7.6vh;
     background-color: #99E2D0;
     border-radius: 0 15px 15px 0;
-    height: 9.6vh;
     transform: scaleX(0);
+    transition: 0.4s;
+    opacity: 1;
  }
  .food__card:hover .food__effect {
     border: 2px #99E2D0;
@@ -210,7 +210,7 @@ footer a{
     font-size: 16px;
     font-weight: lighter;
     margin-left: 4vw;
-    padding-top: 0.2vh;
+    padding-top: 2vh;
 }
 
 .footer-details{
