@@ -133,6 +133,8 @@ margin-left: 1vw;
         margin-top: -3.5vh;
     }
 
+    /**ANIMATION FOOD CARDS**/
+
     .food__effect{
     display: flex;
     justify-content: center;
