@@ -107,6 +107,7 @@ width: 12vw;
 margin-bottom: 3vh;
 margin-top: 5vh;
 margin-left: 1vw;
+border-bottom: 3px solid #99E2D0;
 }
 
 .food__card{
@@ -120,39 +121,65 @@ margin-left: 1vw;
     margin-bottom: 2vh;
 }
 
-.food__details{
-    font-size: 14px;
-    margin-left: 3vw;
+.food__card h3{
+    font-size: 15px;
+    font-weight: bold;
+    text-overflow: ellipsis;
+}
+
+.title__delice{
+    font-size: 14.4px;
+}
+
+.food__more{
+    display: flex;
+    height: 6vh;
+    justify-content: space-between;
+    overflow: hidden;
     margin-top: -1vh;
-    line-height: 1vh;
+}
+
+.food__more p{
+    text-overflow: ellipsis;
+    line-height: 4vh;
+    font-size: 13px;
+}
+
+
+.food__details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    margin-left: 3vh;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 0vh;
+    }
+
+    .food__details h3{
+        display: block;
+        margin-top: 2vh;
+        margin-bottom: 0.5vh;
     }
 
     .food__price{
         font-weight: bold;
-        margin-left: 70vw;
-        margin-top: -3.5vh;
+        padding-right: 4vw;
     }
 
-    /**ANIMATION FOOD CARDS**/
-
     .food__effect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
     width: 0;
-    height: 9.6vh;
-    margin-left: 65vw;
-    margin-top: -7.6vh;
     background-color: #99E2D0;
     border-radius: 0 15px 15px 0;
     transform: scaleX(0);
     transition: 0.4s;
     opacity: 1;
  }
+
  .food__card:hover .food__effect {
     border: 2px #99E2D0;
-    margin-left: 61vw;
     width: 22vw;
     background-color: #99E2D0;
     border-radius: 0 15px 15px 0;       
@@ -162,6 +189,9 @@ margin-left: 1vw;
         font-size: 1.1em;
         color: white;
         transition: 0.5s;
+        text-align: center;
+        margin-left: 5vw;
+        margin-top: 3vh;
     }
     .food__card:hover .check{
         transform: rotate(360deg);
