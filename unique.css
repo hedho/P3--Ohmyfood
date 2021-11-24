@@ -87,6 +87,18 @@ z-index: 2;
     margin-left: 5vw;
 }
 
+.heart__food{
+    margin-left: 78vw;
+    margin-top: -7vh;
+    font-size: 21px;
+}
+
+.heart__food:hover{
+    font-weight: bold;
+    transition: 0.2s;
+    color: #9356DC;
+}
+
 .heart{
     position: absolute;
     margin-left: 80vw;
