@@ -102,7 +102,6 @@ z-index: 2;
 
 .food__title{
 font-size: 10px;
-font-weight: 300;
 width: 12vw;
 margin-bottom: 3vh;
 margin-top: 5vh;
@@ -256,19 +255,21 @@ footer a{
 
     body{
         background: #fff ;
-        margin-left: -8.4vw;
+        margin-left: 0vw;
     }
 
     .back{
         font-size: 22px;
         margin-left: 10vw;
     }
+
     .logo{
         margin-left: 9vw;
         border-radius: 20px 20px 0 0;
         width: 80vw;
         margin-top: -4vh;
         }
+
         .svg-logo{
             margin-top: 1vh;
             margin-left: 27vw;
@@ -292,7 +293,7 @@ footer a{
         }
         
         .menu{
-            height: 110vh;
+            height: 115vh;
         }
 
         .menu--2{
@@ -303,21 +304,35 @@ footer a{
             width: 50vw;
             height: 5vh;
             margin-left: 10vw;
+            display: block;
+        }
+
+        .food__details{
+            margin-top: -0.5vh;
+            display: block;
+        }
+
+
+        .food__more{
+            display: block;
+            margin-top: -2vh;
         }
 
         .food__card--2{
             width: 50vw;
             height: 5vh;
             margin-left: 10vw;
+            display: block;
         }
 
         .food__price--2{
-            margin-left: 40vw;
-            margin-top: -7vh;
+            display: block;
         }
 
         .food__price{
-            margin-left: 40vw;
+            display: block;
+            margin-left: 20vw;
+            border: 2px solid black;
         }
 
         .btn{
@@ -327,23 +342,31 @@ footer a{
             margin-left: 20vw;
         }
 
-        section i{
-            width: 100%;
-            height: 40px;
-            margin-top: 2vh;
-           
-        }
         .food__effect{
-            width: 65px;
+            width: 0;
+            margin-top: -6.2vh;
+            margin-left: 40.5vw;
             height: 5.5vh;
-            margin-left: 42vw;
-            margin-top: -4.6vh;
         }
 
-        .food__effect:hover{
-            margin-left: 39vw;
-            margin-top: -4.6vh;
+        .food__card:hover .food__effect{
+            width: 10vw;
         }
+
+        .check{
+            font-size: 1.1em;
+            color: white;
+            transition: 0.5s;
+            text-align: center;
+            margin-left: 3.5vw;
+            margin-top: 2vh;
+        }
+        .food__card:hover .check{
+            transform: rotate(360deg);
+            transition: 0.5s;
+        }
+
+       
 
         /**FOOTER TABLETTE**/ 
 
@@ -382,7 +405,7 @@ footer a{
        .svg-logo{
         width: 19vw;
         margin-left: 15vw;
-        margin-top: 2vh;
+        margin-top: 4vh;
     }
 
     .background__img{
@@ -398,7 +421,7 @@ footer a{
     }
     
     .menu{
-        height: 110vh;
+        height: 115vh;
     }
     .food__card{
         width: 20vw;
@@ -409,23 +432,29 @@ footer a{
         margin-left: 15vw;
     }
 
-    section i{
-        width: 80px;
-        height: 30px;
-        margin-top: 2vh;
-        color: transparent;
-        margin-left: -0.5vw;
-    }
+    
     .food__effect{
-        width: 65px;
+        width: 0;
+        margin-top: -6.2vh;
+        margin-left: 17.2vw;
         height: 5.5vh;
-        margin-left: 16vw;
-        margin-top: -4.8vh;
     }
 
-    .food__effect:hover{
-        margin-left: 14vw;
-        margin-top: -4.8vh;
+    .food__card:hover .food__effect{
+        width: 3vw;
+    }
+
+    .check{
+        font-size: 1.1em;
+        color: white;
+        transition: 0.5s;
+        text-align: center;
+        margin-left: 1vw;
+        margin-top: 2vh;
+    }
+    .food__card:hover .check{
+        transform: rotate(360deg);
+        transition: 0.5s;
     }
 
     .btn--2{
