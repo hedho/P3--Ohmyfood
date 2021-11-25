@@ -99,18 +99,6 @@ z-index: 2;
     color: #9356DC;
 }
 
-.heart{
-    position: absolute;
-    margin-left: 80vw;
-    margin-top: -7vh;
-    font-size: 21px;
-}
-
-.heart:hover{
-    font-weight: bold;
-    transition: 0.2s;
-    color: #9356DC;
-}
 
 .food__title{
 font-size: 10px;
@@ -312,6 +300,13 @@ footer a{
             height: 120vh;
             border-radius: 20px 20px;
         }
+
+        .heart__food{
+            margin-left: 68vw;
+            margin-top: -5vh;
+            font-size: 30px;
+        }
+
         .food__card{
             width: 50vw;
             height: 5vh;
@@ -435,6 +430,12 @@ footer a{
     .menu{
         height: 115vh;
     }
+
+    .heart__food{
+        margin-left: 33vw;
+        font-size: 30px;
+    }
+
     .food__card{
         width: 20vw;
         margin-left: 5vw;
