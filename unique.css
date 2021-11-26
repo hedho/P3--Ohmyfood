@@ -311,35 +311,28 @@ footer a{
             width: 50vw;
             height: 5vh;
             margin-left: 10vw;
-            display: block;
+            
         }
 
         .food__details{
             margin-top: -0.5vh;
-            display: block;
+            
         }
 
 
         .food__more{
-            display: block;
             margin-top: -2vh;
+            text-overflow: ellipsis;
         }
 
         .food__card--2{
             width: 50vw;
             height: 5vh;
             margin-left: 10vw;
-            display: block;
-        }
-
-        .food__price--2{
-            display: block;
+            
         }
 
         .food__price{
-            display: block;
-            margin-left: 20vw;
-            border: 2px solid black;
         }
 
         .btn{
@@ -349,28 +342,8 @@ footer a{
             margin-left: 20vw;
         }
 
-        .food__effect{
-            width: 0;
-            margin-top: -6.2vh;
-            margin-left: 40.5vw;
-            height: 5.5vh;
-        }
-
-        .food__card:hover .food__effect{
-            width: 10vw;
-        }
-
         .check{
-            font-size: 1.1em;
-            color: white;
-            transition: 0.5s;
-            text-align: center;
-            margin-left: 3.5vw;
             margin-top: 2vh;
-        }
-        .food__card:hover .check{
-            transform: rotate(360deg);
-            transition: 0.5s;
         }
 
        
