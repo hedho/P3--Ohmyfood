@@ -58,12 +58,13 @@ main{
 background-color: #f6f6f6;
 border-radius: 20px 20px 0 0;
 width: 100%;
-height: 164vh;
+height: auto;
 display: block;
 margin-top: -7vh;
 position: relative;
 z-index: 2;
 }
+
 .menu{
     z-index: 2;
 }
@@ -102,7 +103,7 @@ z-index: 2;
 
 .food__title{
 font-size: 10px;
-width: 12vw;
+width: 20%;
 margin-bottom: 3vh;
 margin-top: 5vh;
 margin-left: 1vw;
@@ -115,8 +116,8 @@ border-bottom: 3px solid #99E2D0;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 5px 10px #CDCDCD;
     background-color: #fff;
-    width: 85vw;
-    height: 9vh;
+    width: 95%;
+    height: auto;
     margin-bottom: 2vh;
 }
 
@@ -148,7 +149,7 @@ border-bottom: 3px solid #99E2D0;
 .food__details{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 95%;
     height: auto;
     font-size: 14px;
     margin-left: 3vh;
@@ -179,7 +180,7 @@ border-bottom: 3px solid #99E2D0;
 
  .food__card:hover .food__effect {
     border: 2px #99E2D0;
-    width: 22vw;
+    width: 25%;
     background-color: #99E2D0;
     border-radius: 0 15px 15px 0;       
     transform: scaleX(1);
@@ -192,6 +193,7 @@ border-bottom: 3px solid #99E2D0;
         margin-left: 5vw;
         margin-top: 3vh;
     }
+
     .food__card:hover .check{
         transform: rotate(360deg);
         transition: 0.5s;
@@ -206,7 +208,7 @@ border-bottom: 3px solid #99E2D0;
 }
 .btn__order{
     font-size: 14px;
-    width: 40vw;
+    width: 65%;
     height: 40px;
     color: #fff;
     background-image: linear-gradient(to bottom right,#FF79DA,#9356DC) ;
@@ -217,7 +219,7 @@ border-bottom: 3px solid #99E2D0;
 }
 /**BTN--2/LA NOTE ENCHANTEE**/
 .btn--2{
-    margin-left: 25vw;
+    margin-left: 65%;
     padding-top: 4.5vh;
 }
 /**------------**/
@@ -227,6 +229,7 @@ border-bottom: 3px solid #99E2D0;
 footer{
     background-color: #353535;
     color: #fff;
+    width: 100%;
     height: 23vh;
     margin-top: -4vh;
 }
@@ -245,17 +248,18 @@ footer a{
 }
 
 .footer-details{
-    
     margin-left: 4vw;
     margin-top: -3vh;
 }
 
 
+/**TABLETTE**/ 
+
 @media screen and (min-width: 768px) {
 
     body{
         background: #fff ;
-        margin-left: 0vw;
+        margin-left: -3.5vw;
     }
 
     .back{
@@ -278,7 +282,7 @@ footer a{
         /**IMAGE TABLETTE**/
 
         .background__img{
-            width: 80vw;
+            width: 100%;
             margin-left: 9vw;
             border-radius: 20px 20px;
         }
@@ -286,14 +290,14 @@ footer a{
         /**MENU TABLETTE**/
 
         main{
-            width: 80vw;
+            width: 79%;
             margin-left: 9vw;
             margin-top: 1vh;
             border-radius: 20px 20px;
         }
         
         .menu{
-            height: 115vh;
+            height: 125vh;
         }
 
         .menu--2{
@@ -308,9 +312,9 @@ footer a{
         }
 
         .food__card{
-            width: 50vw;
-            height: 5vh;
-            margin-left: 10vw;
+            width: 75%;
+            height: auto;
+            margin-left: 6vw;
             
         }
 
@@ -332,9 +336,6 @@ footer a{
             
         }
 
-        .food__price{
-        }
-
         .btn{
             margin-left: 20vw;
         }
@@ -344,6 +345,7 @@ footer a{
 
         .check{
             margin-top: 2vh;
+            margin-left: 4.5vw;
         }
 
        
