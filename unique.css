@@ -283,7 +283,7 @@ footer a{
 
         .background__img{
             width: 80%;
-            margin-left: 9vw;
+            margin-left: 12.5vw;
             border-radius: 20px 20px;
         }
 
@@ -291,7 +291,7 @@ footer a{
 
         main{
             width: 79%;
-            margin-left: 9vw;
+            margin-left: 12.5vw;
             margin-top: 1vh;
             border-radius: 20px 20px;
         }
@@ -353,8 +353,8 @@ footer a{
         /**FOOTER TABLETTE**/ 
 
         footer{
-            width:80vw;
-            margin-left: 9vw;
+            width: 79%;
+            margin-left: 13vw;
             border-radius: 20px 20px;
             margin-top: 1vh;
             line-height: 1.5vh;
@@ -391,19 +391,19 @@ footer a{
     }
 
     .background__img{
-        width: 40vw;
-        margin-left: 30vw;
+        width: 45%;
+        margin-left: 27vw;
     }
 
     /**MENU DESKTOP**/
 
     main{
-        width: 40vw;
-        margin-left: 30vw;
+        width: 45%;
+        margin-left: 27vw;
     }
     
     .menu{
-        height: 115vh;
+        height: 125vh;
     }
 
     .heart__food{
@@ -412,55 +412,31 @@ footer a{
     }
 
     .food__card{
-        width: 20vw;
-        margin-left: 5vw;
+        margin-left: 2vw;
         margin-right: 10vw;
-    }
-    .food__price{
-        margin-left: 15vw;
-    }
-
-    
-    .food__effect{
-        width: 0;
-        margin-top: -6.2vh;
-        margin-left: 17.2vw;
-        height: 5.5vh;
     }
 
     .food__card:hover .food__effect{
-        width: 3vw;
+        width: 15%;
     }
 
     .check{
-        font-size: 1.1em;
-        color: white;
-        transition: 0.5s;
-        text-align: center;
-        margin-left: 1vw;
-        margin-top: 2vh;
+        margin-left: 1.5vw;
     }
     .food__card:hover .check{
         transform: rotate(360deg);
         transition: 0.5s;
     }
 
-    .btn--2{
-        margin-left: 12vw;
-    }
-
-    .btn{
-        margin-left: 12vw;
-    }
     .btn__order{
-        width: 15vw;
+        margin-left: -6vw;
     }
 
     /**DESKTOP FOOTER**/
     footer{
-        width: 40vw;
+        width: 45%;
         height: 15vh;
-        margin-left: 30vw;
+        margin-left: 27vw;
     }
 
     .footer-header{
