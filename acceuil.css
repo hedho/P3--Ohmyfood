@@ -76,14 +76,15 @@ svg circle{
 
 /**HEADER**/
 .svg-logo{
-    margin-left: 20vw;
+    margin-left: 19vw;
     margin-bottom: 1vh;
 }
 .logo{
-    margin-left: 5vw;
+    margin-left: 4vw;
 }
 
 .location{ 
+    width: 100%;
     margin-top: -2vh;
     background-color: #eaeaea;
     box-shadow:  0 -2px 4px #BEBEBE;
@@ -102,17 +103,20 @@ svg circle{
 
 .info-header{
     background-color: #f6f6f6;
-    height: 230px;
+    width: 100%;
+    height: auto;
     margin-top: -5vw;
     padding-top: 5px;
 }
 .info-title{
+    width: 100%;
     font-size: 12px;
     text-align: center;
     line-height: 4vh;
     font-weight: 500;
 }
 .info-details{
+    width: 100%;
     color: #3A3A3A;
     margin-top: 0vh;
     font-size: 16px;
@@ -122,7 +126,7 @@ svg circle{
 
 /**HEADER BTN**/
 .header-btn{
-    margin-top: 3vh;
+    margin-top: 2vh;
     margin-left: 22vw;
 }
 .explore-btn{
@@ -153,12 +157,13 @@ nav h2{
     margin-bottom: 3vh;
     margin-left: 7vw;
     text-align: center;
-    width: 80vw;
+    width: 85%;
     height: 60px;
     background-color: #f6f6f6;
     box-shadow: 0 3px 10px #CDCDCD;
 }
 .working-cards p{
+    width: 100%;
     margin-top: -5vh;
     font-weight: 600;
 }
@@ -172,6 +177,7 @@ nav h2{
 }
 
 .working i{
+    width: 4%;
     color: #757575;
     margin-right: 4vw;
     margin-left: -10vw;
@@ -181,6 +187,7 @@ nav h2{
     
 }
 .number{
+    width: 100%;
     color: #fff;
     background-color: #9356DC;
     border: 1px solid #9356DC;
@@ -197,7 +204,7 @@ nav h2{
 /**SECTION**/
 section{
     background-color: #f6f6f6;
-    height: 157vh;
+    height: 155vh;
 }
 
 .restaurant-title{
@@ -212,17 +219,20 @@ section{
 }
 
 .places-cards{
+    display: flex;
+    flex-direction: column;
     border: 2px solid transparent;
     background-color: #fff;
     border-radius: 15px;
-    width: 80vw;
-    height: 32vh;
+    width: 85%;
+    height: auto;
     margin-bottom: 3vh;
     box-shadow: 0 3px 10px #CDCDCD;
     margin-left: 2.5vw;
 }
 
 .places-img{
+    width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
 }
@@ -234,10 +244,10 @@ section{
 }
 .places-cards:hover{
     box-shadow: 0 5px 10px #949494; 
-    
     transition: 0.4s;
 }
 .icons{
+    position: absolute;
     margin-left: 67vw;
     margin-top: -5vh;
     font-size: 21px;
@@ -251,15 +261,16 @@ section{
 
 .places__effect{
     position: absolute;
-    margin-left: 50vw;
-    margin-top: -28vh;
-    width: 25vw;
-    height: 5vh;
+    margin-left: 48vw;
+    margin-top: -30vh;
+    width: 25%;
+    height: auto;
     background-color: #99E2D0;
     border-radius: 3px 3px;
 }
 
 .effect__p{
+    width: 100%;
     font-size: 15px;
     font-weight: bold;
     color: #008766;
@@ -269,9 +280,10 @@ section{
 
 /**FOOTER**/
 footer{
+    height: auto;
     background-color: #353535;
     color: #fff;
-    height: 25vh;
+   
 }
 footer a{
     color: #fff;
@@ -317,9 +329,9 @@ margin-right: 2vw;
     /**MEDIA HEADER**/ 
 
     .logo{
-    margin-left: 9vw;
+    margin-left: 4vw;
     border-radius: 20px 20px 0 0;
-    width: 80vw;
+    width: 85%;
     background-color: #fff;
     }
     .svg-logo{
@@ -328,9 +340,9 @@ margin-right: 2vw;
     }
     .location{
         margin-top: -1.5vh;
-        width: 80vw;
+        width: 82%;
         height: 6vh;
-        margin-left: 9vw;
+        margin-left: 4vw;
         border-radius: 20px 20px;
     }
     .location p{
@@ -338,8 +350,8 @@ margin-right: 2vw;
     }
 
     .info-header{
-        width: 80vw;
-        margin-left: 9vw;
+        width: 82%;
+        margin-left: 4vw;
         margin-top: -1.5vh;
         border-radius: 0 0 20px 20px;
     }
@@ -357,16 +369,16 @@ margin-right: 2vw;
 
     .explore-btn{
         width: 25vw;
-        margin-left: 5vw;
+        margin-left: 6vw;
         margin-top: -2vh;
     }
 
     /**MEDIA NAV**/
     nav{
         background-color: #fff;
-        width: 80vw;
+        width: 85%;
         height: 32vh;
-        margin-left: 9vw;
+        margin-left: 6vw;
         border-radius: 20px 20px;
     }
     nav h2{
@@ -377,7 +389,7 @@ margin-right: 2vw;
 
     .working-cards{
         margin-left: 15vw;
-        width: 50vw;
+        width: 65%;
         align-content: center;
     }
 
@@ -395,10 +407,10 @@ margin-right: 2vw;
     /**MEDIA SECTION**/
 
     section{
-        width: 80vw;
+        width: 82%;
         height: 48vh;
         border-radius: 20px 20px;
-        margin-left: 9vw;
+        margin-left: 4vw;
         margin-top: -5vh;
     }
     section h3{
@@ -454,9 +466,9 @@ margin-right: 2vw;
     /**FOOTER TABLETTE**/
 
     footer{
-        width: 80vw;
+        width: 82%;
         height: 25vh;
-        margin-left: 9vw;
+        margin-left: 4vw;
         margin-top: 1vh;
         margin-bottom: 2vh;
         border-radius: 20px 20px;
@@ -490,14 +502,13 @@ svg{
     /**DESKTOP HEADER**/
 .logo{
  border-radius: 20px 20px 0 0;
- width: 50vw;
  margin-left: 25vw;
  margin-bottom: -3vh;
  background-color: #fff;
 }
 
 .svg-logo{
-    width: 19vw;
+    width: 20%;
     margin-left: 15vw;
     margin-top: 2vh;
 }
@@ -642,3 +653,5 @@ footer{
 }
 
 }
+
+
