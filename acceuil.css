@@ -203,8 +203,9 @@ nav h2{
 
 /**SECTION**/
 section{
+    
     background-color: #f6f6f6;
-    height: 155vh;
+    height: auto;
 }
 
 .restaurant-title{
