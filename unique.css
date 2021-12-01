@@ -38,9 +38,10 @@ body{
 }
 .svg-logo{
     display: block;
-    margin-top: -4.5vh;
-    margin-left: 20vw;
+    margin-top: -3.5vh;
+   margin-left: 20vw;
     margin-bottom: 1vh;
+    width: 60%;
 }
 
 .background{
@@ -276,7 +277,7 @@ footer a{
 
         .svg-logo{
             margin-top: 1vh;
-            margin-left: 27vw;
+            
         }
 
         /**IMAGE TABLETTE**/
@@ -381,12 +382,12 @@ footer a{
     }
     .logo{
         border-radius: 20px 20px 0 0;
-        width: 50vw;
-        margin-left: 25vw;
+        
+        
        }
        .svg-logo{
-        width: 19vw;
-        margin-left: 15vw;
+        width: 50%;
+        
         margin-top: 4vh;
     }
 
