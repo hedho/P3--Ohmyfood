@@ -94,12 +94,13 @@ header{
 
 .location{ 
     display: flex;
-    position: relative;
+    position: sticky;
     justify-content: center;
     width: 100%;
     height: 50px;
     background-color: #eaeaea;
     box-shadow:  0 -2px 4px #BEBEBE;
+    z-index: 3;
 }
 
 .location p{
@@ -120,8 +121,9 @@ header{
     background-color: #f6f6f6;
     width: 100%;
     height: 33vh;
-    margin-top: -5vw;
+    margin-top: 0vw;
     padding-top: 5px;
+    z-index: 1;
 }
 .info-title{
     width: 100%;
@@ -366,18 +368,17 @@ margin-right: 0vw;
       }
 
     /**MEDIA HEADER**/ 
-
-    .location{
-        
-    }
     
+    .location{
+        justify-content: center;
+    }
+
     .info-title{
         font-size: 21px;
     }
 
     .info-details{
-        font-size: 18px;
-        
+        font-size: 18px;   
     }
     
     /**MEDIA NAV**/
