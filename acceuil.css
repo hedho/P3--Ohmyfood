@@ -493,6 +493,10 @@ svg{
     .svg-logo{
         width: 50%;
     }
+
+    .header-btn{
+        width: 30%;
+    }
     .explore-btn{
         width: 100%;
     }
@@ -502,10 +506,20 @@ svg{
       width: 55%;
   }
 
-    .number{
-    margin-left: -1vw;
-    align-content: center;
-    line-height: 1.5vh;
+  .number {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    color: #fff;
+    background-color: #9356DC;
+    border: 1px solid #9356DC;
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    margin-left: -2vw;
 }
 
 /**SECTION DESKTOP**/
