@@ -233,7 +233,6 @@ nav h2{
     margin-left: -3vw;
 }
 
-
 /**SECTION**/
 section{
     display: flex;
@@ -324,13 +323,14 @@ footer{
     margin-top: -3vh;
     height: 16vh;
     background-color: #353535;
-    color: #fff;
-   
+    color: #fff;  
 }
+
 footer a{
     color: #fff;
     font-size: 14px;
 }
+
 .footer-header{
     font-family: shrikhand;
     font-size: 19px;
@@ -347,7 +347,6 @@ footer a{
 .end i{
 margin-right: 0vw;
 }
-
 
 /**MEDIA TABLETTE**/
 @media screen and (min-width: 768px) {
@@ -442,7 +441,6 @@ margin-right: 0vw;
        align-self: center;
     }
 
-
     /**FOOTER TABLETTE**/
 
     footer{
@@ -535,8 +533,6 @@ svg{
 
 .places__effect{
 position: relative;
-
-
 }
 
 .effect__p{
@@ -548,6 +544,5 @@ position: relative;
 
 .end i{
     margin-right: 0vw;
-}
-
+    }
 }
