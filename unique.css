@@ -82,17 +82,25 @@ z-index: 2;
     margin-left: 5vw;
 }
 
+.title__heart{
+    display: flex;
+    flex-direction: row;
+}
+
 .menu__title{
     font-family: shrikhand;
     font-size: 12px;
     padding-top: 1vh;
-    margin-left: 5vw;
+    margin-left: 4vw;
+    width: 65%;
+    
 }
 
 .heart__food{
-    margin-left: 78vw;
-    margin-top: -7vh;
+    position: relative;
     font-size: 21px;
+    margin-top: 3vh;
+    left: 20%;
 }
 
 .heart__food:hover{
@@ -113,7 +121,6 @@ border-bottom: 3px solid #99E2D0;
 
 .food__card{
     display: flex;
-    border: 2px solid #fff;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 0 5px 10px #CDCDCD;
     background-color: #fff;
@@ -180,12 +187,12 @@ border-bottom: 3px solid #99E2D0;
  }
 
  .food__card:hover .food__effect {
-    border: 2px #99E2D0;
     width: 25%;
+    height: auto;
     background-color: #99E2D0;
-    border-radius: 0 15px 15px 0;       
     transform: scaleX(1);
 }
+
     .check{
         font-size: 1.1em;
         color: white;
@@ -298,7 +305,7 @@ footer a{
         }
         
         .menu{
-            height: 125vh;
+            height: 130vh;
         }
 
         .menu--2{
@@ -306,11 +313,7 @@ footer a{
             border-radius: 20px 20px;
         }
 
-        .heart__food{
-            margin-left: 68vw;
-            margin-top: -5vh;
-            font-size: 30px;
-        }
+        
 
         .food__card{
             width: 75%;
@@ -388,7 +391,7 @@ footer a{
        .svg-logo{
         width: 50%;
         
-        margin-top: 4vh;
+        margin-top: 7vh;
     }
 
     .background__img{
@@ -404,13 +407,10 @@ footer a{
     }
     
     .menu{
-        height: 125vh;
+        height: 130vh;
     }
 
-    .heart__food{
-        margin-left: 33vw;
-        font-size: 30px;
-    }
+    
 
     .food__card{
         margin-left: 2vw;
